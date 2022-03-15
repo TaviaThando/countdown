@@ -1,6 +1,6 @@
 body {
     text-align: center;
-    text-decoration: overline;
+    /* text-decoration: overline; */
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     background:linear-gradient(to right, lightgrey 0%, lightgrey 1%, rgb(224, 224, 224) 26%, rgb(239, 239, 239) 48%, rgb(217, 217, 217) 75%, rgb(188, 188, 188) 100%);
 }
@@ -41,3 +41,34 @@ body {
         transform: rotate(-360deg);
     }
 }
+
+.number {
+    position: relative;
+    top: -320px;
+    width: 120px;
+    height: 120px;
+    margin: auto;
+
+}
+
+.number::after {
+    content: '';
+    font-weight: 800;
+    font-size: 100px;
+    /* top: -px; */
+    /* width: 100px;
+    height: 100px; */
+    /* position: absolute; */
+    animation: count 20s infinite steps(20, start);
+
+}
+
+@keyframes count {
+    0%, 100% { content: '0';}
+    5% { content: '20';}
+    10% { content: '19';}
+    15% { content: '18';}
+    20% { content: '17'}
+    25% {content: '16'}
+}
+
