@@ -2,40 +2,36 @@ body {
     text-align: center;
     text-decoration: overline;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    /* background: black; */
+    background:linear-gradient(to right, lightgrey 0%, lightgrey 1%, rgb(224, 224, 224) 26%, rgb(239, 239, 239) 48%, rgb(217, 217, 217) 75%, rgb(188, 188, 188) 100%);
 }
 
 .container {
-    border: 5px solid grey;
-    width: 400px;
-    height: 400px;
+    background: linear-gradient(to bottom, black 1%, transparent 99%);
+    border: 2px solid black;
+    width: 200px;
+    height: 200px;
     margin: auto;
     border-radius: 100%;
-    display: flex;
-    align-items: center;
-    
-}
-
-.small_container {
-    /* border: 5px solid grey; */
-    width: 380px;
-    height: 380px;
-    margin: auto;
-    border-radius: 100%;
-    background-image: linear-gradient(grey, transparent);
     animation: spin 2s 3s ease infinite;
-    display: flex;
-    align-items: center;
+
 }
 
-.timer {
-    border: 5px solid rgb(158, 156, 156);
-    width: 300px;
-    height: 300px;
+.small-container {
+    position: relative;
+    top: -182px;
+    width: 160px;
+    height: 160px;
     margin: auto;
     border-radius: 100%;
-    background-color: rgb(158, 156, 156);
+    background-color: #e5e7e5;
+    border: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+    font-weight: 800;
 }
+
 
 @keyframes spin {
     from {
